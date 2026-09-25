@@ -41,9 +41,11 @@ Click **"Download as Excel"** and save the `.xlsx` file into this folder.
 
 ### 2. Install Python Dependencies
 
-You need Python 3.8+ (most Macs and Linux machines already have it).
+You need Python 3.10+ (most Macs and Linux machines already have it).
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -194,7 +196,7 @@ The tool automatically picks the right Grok type for each variable:
 ## Running Tests
 
 ```bash
-pip install pytest
+pip install -r requirements-dev.txt
 pytest tests/ -v
 ```
 
